@@ -1,0 +1,420 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "burnlog",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "asset_owner",
+                    "type": "name"
+                },
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "collection_name",
+                    "type": "name"
+                },
+                {
+                    "name": "schema_name",
+                    "type": "name"
+                },
+                {
+                    "name": "template_id",
+                    "type": "int32"
+                },
+                {
+                    "name": "asset_ram_payer",
+                    "type": "name"
+                },
+                {
+                    "name": "created_at",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "tx",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "claimlogs_s",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "entity",
+                    "type": "string"
+                },
+                {
+                    "name": "quantity",
+                    "type": "uint64"
+                },
+                {
+                    "name": "created_at",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "tx",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "collassets_s",
+            "base": "",
+            "fields": [
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "delburnrow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lower",
+                    "type": "uint64"
+                },
+                {
+                    "name": "upper",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delclaimrow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lower",
+                    "type": "uint64"
+                },
+                {
+                    "name": "upper",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delequiprows",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lower",
+                    "type": "uint64"
+                },
+                {
+                    "name": "upper",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delmintrow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lower",
+                    "type": "uint64"
+                },
+                {
+                    "name": "upper",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "deltransrow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lower",
+                    "type": "uint64"
+                },
+                {
+                    "name": "upper",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "equiplog",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "act",
+                    "type": "string"
+                },
+                {
+                    "name": "schema_name",
+                    "type": "name"
+                },
+                {
+                    "name": "template_id",
+                    "type": "int32"
+                },
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "created_at",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "tx",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "mintlog",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "authorized_minter",
+                    "type": "name"
+                },
+                {
+                    "name": "collection_name",
+                    "type": "name"
+                },
+                {
+                    "name": "schema_name",
+                    "type": "name"
+                },
+                {
+                    "name": "template_id",
+                    "type": "int32"
+                },
+                {
+                    "name": "new_asset_owner",
+                    "type": "name"
+                },
+                {
+                    "name": "created_at",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "tx",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "placelogs_s",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "land_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "act",
+                    "type": "string"
+                },
+                {
+                    "name": "schema_name",
+                    "type": "name"
+                },
+                {
+                    "name": "template_id",
+                    "type": "int32"
+                },
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "created_at",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "tx",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "saveasset",
+            "base": "",
+            "fields": [
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "transferlog",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "collection_name",
+                    "type": "name"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "assets_ids",
+                    "type": "uint64[]"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                },
+                {
+                    "name": "created_at",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "tx",
+                    "type": "checksum256"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "delburnrow",
+            "type": "delburnrow",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delclaimrow",
+            "type": "delclaimrow",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delequiprows",
+            "type": "delequiprows",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delmintrow",
+            "type": "delmintrow",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deltransrow",
+            "type": "deltransrow",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "saveasset",
+            "type": "saveasset",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "burnlogs",
+            "type": "burnlog",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "claimlogs",
+            "type": "claimlogs_s",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "collassets",
+            "type": "collassets_s",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "equiplogs",
+            "type": "equiplog",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "mintlogs",
+            "type": "mintlog",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "placelogs",
+            "type": "placelogs_s",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "transferlogs",
+            "type": "transferlog",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
